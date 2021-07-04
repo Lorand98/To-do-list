@@ -1,0 +1,16 @@
+.to-do-list {
+  min-height: 20rem;
+  margin: 4rem 2rem;
+  border-radius: 25px;
+  background-color: #2c96b1;
+  text-align: center;
+}
+
+.to-do-list ul {
+  list-style: none;
+  text-align: left;
+  padding: 1rem;
+}
+.to-do-list h1 {
+  padding-top: 0.2rem;
+}
