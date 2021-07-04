@@ -1,0 +1,12 @@
+.list-adder-modifier {
+  text-align: center;
+}
+
+.btn-add-modify {
+  margin: auto 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  padding: 0.2rem 1rem;
+}

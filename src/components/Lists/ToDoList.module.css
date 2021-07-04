@@ -1,9 +1,11 @@
 .to-do-list {
   min-height: 20rem;
-  margin: 4rem 2rem;
+  margin: 1rem 2rem;
   border-radius: 25px;
-  background-color: #2c96b1;
+  background-color: #5fd6f5;
   text-align: center;
+  position: relative;
+  animation: items-appear 1s ease-out forwards;
 }
 
 .to-do-list ul {
@@ -13,4 +15,91 @@
 }
 .to-do-list h1 {
   padding-top: 0.2rem;
+  outline: none;
+}
+
+.btn-remove {
+  background-color: black;
+  color: #fff;
+  border: none;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  padding: 0.6rem;
+  transition: 0.3s;
+}
+
+.btn-remove:hover {
+  background-color: #fff;
+  color: black;
+  transition: 0.4s;
+}
+
+.fade-out {
+  animation: fadeOut ease 0.3s;
+  -webkit-animation: fadeOut ease 0.3s;
+  -moz-animation: fadeOut ease 0.3s;
+  -o-animation: fadeOut ease 0.3s;
+  -ms-animation: fadeOut ease 0.3s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes items-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
