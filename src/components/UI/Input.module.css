@@ -1,0 +1,12 @@
+.item-input {
+  outline: 0;
+  border-width: 0 0 1px;
+  font-family: inherit;
+  font-size: inherit;
+  padding: none;
+  width: auto;
+  display: block;
+  background-color: inherit;
+  margin: 0.5rem auto;
+  text-align: center;
+}

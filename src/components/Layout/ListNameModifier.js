@@ -25,6 +25,7 @@ const ListNameModifier = (props) => {
           placeholder='List Name'
           value={input}
           onChange={onInputChange}
+          required
         />
         <button className={classes['btn-add-modify']} type='submit'>
           Edit Title

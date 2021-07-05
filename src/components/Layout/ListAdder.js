@@ -10,8 +10,8 @@ const ListAdder = (props) => {
     e.preventDefault();
     const newList = {
       id: `t${listsCtx.lists.length + 1}`,
-      items: [],
       name: inputRef.current.value,
+      items: [],
     };
     listsCtx.addList(newList);
 

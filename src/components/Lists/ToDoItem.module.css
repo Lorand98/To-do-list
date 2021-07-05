@@ -1,4 +1,62 @@
+.item-container {
+  display: flex;
+  align-items: center;
+}
+
 .item {
-  margin: 1rem;
+  margin-left: 1rem;
   font-size: 1.5rem;
+}
+
+.fade-out {
+  animation: fadeOut ease 0.3s;
+  -webkit-animation: fadeOut ease 0.3s;
+  -moz-animation: fadeOut ease 0.3s;
+  -o-animation: fadeOut ease 0.3s;
+  -ms-animation: fadeOut ease 0.3s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
