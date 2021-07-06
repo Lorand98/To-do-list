@@ -134,7 +134,7 @@ const ListsProvider = (props) => {
   useEffect(() => {
     const storedLists = JSON.parse(localStorage.getItem('storedLists'));
 
-    if (storedLists.length > 0) {
+    if (storedLists && storedLists.length > 0) {
       setStoredList(storedLists);
     }
   }, []);
