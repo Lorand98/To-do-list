@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from 'react';
+import { useEffect, useReducer, useState } from 'react';
 import ListContext from './lists-context';
 import { cloneDeep } from 'lodash';
 
@@ -121,6 +121,7 @@ const listsReducer = (state, action) => {
 };
 
 const ListsProvider = (props) => {
+  const [searchedList, setSearchedList] = useState('');
   const [listsState, dispatchListsAction] = useReducer(
     listsReducer,
     DEFAULT_LISTS
@@ -137,6 +138,10 @@ const ListsProvider = (props) => {
       setStoredList(storedLists);
     }
   }, []);
+
+  const searchList = (search) => {
+    setSearchedList(search);
+  };
 
   const addList = (list) => {
     dispatchListsAction({ type: ACTION.ADDLIST, newList: list });
@@ -181,6 +186,8 @@ const ListsProvider = (props) => {
 
   const listsContext = {
     lists: listsState,
+    searchedList: searchedList,
+    searchList: searchList,
     addList: addList,
     removeList: removeList,
     changeListName: changeListName,

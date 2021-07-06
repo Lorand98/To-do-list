@@ -1,5 +1,5 @@
 .to-do-list {
-  min-height: 20rem;
+  min-height: 30rem;
   margin: 1rem 2rem;
   border-radius: 25px;
   background-color: #5fd6f5;
@@ -16,6 +16,7 @@
   list-style: none;
   text-align: left;
   padding: 1rem;
+  min-height: 10rem;
 }
 
 .to-do-list__header {
